@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+bool sortedArraySearch(vector<int> &arr, int k) {
+    return binary_search(arr.begin(), arr.end(), k);
+}
+
+int main() {
+    vector<int> arr = {1, 2, 3, 4, 6};
+    int k = 6;
+    cout << (sortedArraySearch(arr, k) ? "true" : "false") << endl;
+    return 0;
+}
